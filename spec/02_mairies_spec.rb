@@ -1,4 +1,4 @@
-require_relative '../data_crypto'
+require_relative '../info_mairie'
 require 'open-uri'
 
 describe "info_mairie" do
@@ -9,6 +9,6 @@ describe "info_mairie" do
 
     expect(name_emails.class).to eq(Hash)
     
-    expect(name_emails.values.all? { |email| email.is_a?(String) }).to eq(true)
+    expect(name_emails.values.all? { |name_emails| email.is_a?(String) }).to eq(true)
   end
 end
